@@ -190,7 +190,7 @@ useEventListener(document, 'keydown', handleKeydown)
           v-for="cat in categories"
           v-show="categoryCounts[cat.id]"
           :key="cat.id"
-          class="px-3 py-1.5 text-xs font-display tracking-wide border transition-colors duration-200"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-display tracking-wide border transition-colors duration-200"
           :class="
             activeCategory === cat.id
               ? 'bg-accent-coral text-bg-deep border-accent-coral'
@@ -198,6 +198,7 @@ useEventListener(document, 'keydown', handleKeydown)
           "
           @click="toggleCategory(cat.id)"
         >
+          <Icon :icon="cat.icon" aria-hidden="true" class="w-3.5 h-3.5" />
           {{ cat.label }} ({{ categoryCounts[cat.id] || 0 }})
         </button>
       </div>
