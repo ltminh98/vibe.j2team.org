@@ -95,8 +95,8 @@ defineExpose({ searchInputRef })
           "
           @click="toggleCategory(cat.id)"
         >
-          <Icon :icon="cat.icon" aria-hidden="true" class="w-3.5 h-3.5" />
-          {{ cat.label }}
+          <Icon :icon="cat.icon" aria-hidden="true" class="w-3.5 h-3.5 shrink-0" />
+          <span class="translate-y-px">{{ cat.label }}</span>
           <span v-if="categoryCounts[cat.id]">({{ categoryCounts[cat.id] }})</span>
           <span v-else class="text-accent-coral/70">&#10022;</span>
         </button>
@@ -109,9 +109,9 @@ defineExpose({ searchInputRef })
         <Icon
           :icon="categoryExpanded ? 'lucide:chevron-up' : 'lucide:chevron-down'"
           aria-hidden="true"
-          class="w-3.5 h-3.5"
+          class="w-3.5 h-3.5 shrink-0"
         />
-        {{ categoryExpanded ? 'Thu gọn' : 'Xem thêm danh mục' }}
+        <span class="translate-y-px">{{ categoryExpanded ? 'Thu gọn' : 'Xem thêm danh mục' }}</span>
       </button>
     </div>
 

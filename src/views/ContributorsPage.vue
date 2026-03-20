@@ -52,8 +52,8 @@ const totalMembers = computed(() => contributorData.value.total)
         to="/members"
         class="inline-flex items-center gap-2 text-sm font-display text-text-secondary hover:text-text-primary transition-colors"
       >
-        <Icon icon="lucide:arrow-left" class="w-4 h-4" />
-        <span>Thành viên</span>
+        <Icon icon="lucide:arrow-left" class="w-4 h-4 shrink-0" />
+        <span class="translate-y-px">Thành viên</span>
       </RouterLink>
 
       <div class="text-center">

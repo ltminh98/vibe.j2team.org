@@ -145,8 +145,8 @@ function handleRemoveFromHistory(path: string) {
         <!-- Top row: Home + Title -->
         <div class="flex items-center justify-between">
           <h1 class="font-display font-bold text-xl text-text-primary flex items-center gap-2">
-            <Icon icon="lucide:book-open" class="w-6 h-6 text-accent-coral" />
-            VibeBook
+            <Icon icon="lucide:book-open" class="w-6 h-6 text-accent-coral shrink-0" />
+            <span class="translate-y-px">VibeBook</span>
           </h1>
           <button
             class="flex items-center justify-center w-9 h-9 rounded border border-border-default hover:bg-bg-deep hover:border-accent-coral transition-colors"
@@ -168,8 +168,8 @@ function handleRemoveFromHistory(path: string) {
             "
             @click="((activeTab = 'all'), handleTabChange())"
           >
-            <Icon icon="lucide:layout-grid" class="w-4 h-4" />
-            Tất cả
+            <Icon icon="lucide:layout-grid" class="w-4 h-4 shrink-0" />
+            <span class="translate-y-px">Tất cả</span>
           </button>
           <button
             class="flex-1 flex items-center justify-center gap-1.5 px-2 py-1.5 rounded text-sm font-medium transition-colors"
@@ -180,8 +180,8 @@ function handleRemoveFromHistory(path: string) {
             "
             @click="((activeTab = 'recent'), handleTabChange())"
           >
-            <Icon icon="lucide:clock" class="w-4 h-4" />
-            Đã xem
+            <Icon icon="lucide:clock" class="w-4 h-4 shrink-0" />
+            <span class="translate-y-px">Đã xem</span>
           </button>
           <button
             class="flex-1 flex items-center justify-center gap-1.5 px-2 py-1.5 rounded text-sm font-medium transition-colors"
@@ -192,8 +192,8 @@ function handleRemoveFromHistory(path: string) {
             "
             @click="((activeTab = 'favorites'), handleTabChange())"
           >
-            <Icon icon="lucide:heart" class="w-4 h-4" />
-            Đã lưu
+            <Icon icon="lucide:heart" class="w-4 h-4 shrink-0" />
+            <span class="translate-y-px">Đã lưu</span>
           </button>
         </div>
 

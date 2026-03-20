@@ -131,8 +131,8 @@ const categoryBreakdown = computed(() => (author.value ? getCategoryBreakdown(au
               rel="noopener noreferrer"
               class="inline-flex items-center gap-2 border border-border-default bg-bg-surface px-4 py-2 text-sm text-text-secondary transition hover:border-accent-coral hover:text-text-primary"
             >
-              <Icon icon="lucide:facebook" class="w-4 h-4" />
-              Facebook
+              <Icon icon="lucide:facebook" class="w-4 h-4 shrink-0" />
+              <span class="translate-y-px">Facebook</span>
             </a>
             <a
               v-if="githubUrl"
@@ -141,8 +141,8 @@ const categoryBreakdown = computed(() => (author.value ? getCategoryBreakdown(au
               rel="noopener noreferrer"
               class="inline-flex items-center gap-2 border border-border-default bg-bg-surface px-4 py-2 text-sm text-text-secondary transition hover:border-accent-coral hover:text-text-primary"
             >
-              <Icon icon="lucide:github" class="w-4 h-4" />
-              GitHub
+              <Icon icon="lucide:github" class="w-4 h-4 shrink-0" />
+              <span class="translate-y-px">GitHub</span>
             </a>
           </div>
         </div>
